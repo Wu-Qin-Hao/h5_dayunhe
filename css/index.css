@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*清除浮动*/
+.clearfix{
+    zoom:1;
+}
+.clearfix:after{
+    clear:both;
+    content:'.';
+    display:block;
+    width: 0;
+    height: 0;
+    visibility:hidden;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+section{
+    display: none;
+}
+/*.sec1{
+    display: block;
+}*/
+/*第一板块 第一部分*/
+.load{
+    height: 100%;
+    width: 100%;
+    /*background-color: #333;*/
+    background: url("../images/background02.jpg");
+    background-size:cover;
+    position: absolute;
+}
+.load_speed{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80%;
+}
+.screen1{
+    height: 100%;
+    width: 100%;
+    /*background-color: #333;*/
+    background: url("../images/background01.jpg");
+    background-size:cover;
+    position: absolute;
+}
+.img_box{
+    position: relative;
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.arousel{
+    position: absolute;
+    display: none;
+    width: 945px;
+    height: 425px;
+    left: -100px;
+    top: -50px;
+    -moz-transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+}
+.img_box .active{
+    display: block;
+}
+.img_box .change{
+    -ms-transform:scale(0.8,0.8); /* IE 9 */
+    -webkit-transform: scale(0.8,0.8); /* Safari */
+    transform: scale(0.8,0.8); /* 标准语法 */
+}
+.animation_text{
+    padding-top:40px;
+    color: #DEB173;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0;
+    -moz-transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+    margin-top: 30px;
+}
+
+/*第一板块 第二部分*/
+@keyframes invite{
+    0%{
+        transform:scale3d(1,1,1);
+    }
+    100%{
+        transform:scale3d(1.3,1.3,1.3);
+    }
+}
+/*.screen2{
+    height: 100%;
+    width: 100%;
+    !*background-color: #333;*!
+    background: url("../images/background02.jpg");
+    background-size:cover;
+    !*position: absolute;*!
+}*/
+#container{
+/*    background-color: #333;*/
+    width:100%;
+    height:100%;
+    background: url("../images/background02.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.text_size{
+    position: absolute;
+    font-size: 34px;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #B28247;
+    font-weight: 600;
+    letter-spacing: 15px;
+}
+.img_size{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+
+@keyframes invite_img{
+    0%{
+        transform:scale3d(1.5,1.5,1.5);
+    }
+    100%{
+        transform:scale3d(1,1,1);
+    }
+}
+.yao{
+    opacity: 0;
+}
+.img_size .change{
+    animation: invite_img 3s;
+    -webkit-animation: invite_img 3s;
+    -moz-animation: invite_img 3s;
+}
+.bak{
+    animation: invite 3s;
+    -webkit-animation: invite 3s;
+    -moz-animation: invite 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+#sContainer{
+    width:60%;
+    height:75%;
+    margin: 0 auto;
+    margin-top: 80%;
+    opacity: 0;
+/*    background-color: #F6E7B0;*/
+    background: url("../images/yaoqin.jpg") no-repeat;
+    background-size: cover;
+    transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+}
+.cont_box{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+}
+.invitation{
+    position: absolute;
+    text-align: center;
+    top: 75%;
+    display: block;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.invitation span{
+    border: 2px solid #B28247;
+    font-size: 34px;
+    padding: 20px 80px;
+    color: #B28247;
+    font-weight: 600;
+}
+
+/*第二板块第一部分*/
+.screen3{
+    height: 100%;
+    width: 100%;
+    background: url("../images/background05.jpg");
+}
+.title_top{
+    font-size: 32px;
+    font-weight: 700;
+    color: #B28247;
+    text-align: center;
+    padding-top:15px;
+}
+.head_img{
+    background-color: #898989;
+    width: 90%;
+    height: 55%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.head_img +p{
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.area span{
+    font-size: 26px;
+    color: #B28247;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 800;
+}
+.area_box{
+    margin:0 auto;
+    width:80%;
+}
+.area{
+    background-color: #FEEBC8;
+    width: 18%;
+    height: 180px;
+    float: left;
+    opacity: 0;
+    padding-top: 20px;
+    margin-right: 15px;
+    -moz-transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+}
+.area:last-of-type{
+    margin-right: 0;
+}
+.active{
+    -ms-transform:scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Safari */
+    transform: scale(1.1,1.1); /* 标准语法 */
+}
+.nofocus{
+    -ms-transform:scale(0.9,0.9); /* IE 9 */
+    -webkit-transform: scale(0.9,0.9); /* Safari */
+    transform: scale(0.9,0.9); /* 标准语法 */
+}
+.box{
+    margin-bottom: 60px;
+    opacity: 0;
+    transition:all 3s ease;
+    -moz-transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    padding-top: 40px;
+}
+.name{
+    font-size: 30px;
+    margin-top: 15px;
+    position: absolute;
+    color: #B28247;
+    margin-left: -35px;
+}
+.portrait{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #898989;
+    margin-top: 20px;
+}
+.rectangle{
+    background-color: #FEEBC8;
+    margin-left: 60px;
+    vertical-align: middle;
+    position: relative;
+    font-size: 30px;
+    padding: 15px 40px;
+    width: 60%;
+    border-radius: 10px;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid #FEEBC8;
+    border-left: 40px solid transparent;
+    position: absolute;
+    left: -38px;
+    top: 40px;
+}
+.content{
+    padding-left: 50px;
+    overflow: hidden;
+    height:45%;
+}
+.over{
+    transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+}
+.chat_img{
+    margin-top: 15px;
+    padding-top: 100px;
+    opacity: 0;
+    transition:all 3s ease;
+    -moz-transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+}
+.bottom{
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: url("../images/plan.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 20px;
+    font-weight: 600;
+    display: none;
+}
+
+.screen4{
+    height: 100%;
+    width: 100%;
+    background: url("../images/background03.png") no-repeat;
+    background-size: cover;
+}
+
+.fullpage{
+    position: relative;
+    overflow: hidden;
+}
+.fullbody{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition:all 2s ease;
+    -moz-transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+}
+/*第二板块第二部分*/
+.introduce{
+    padding-top: 24%;
+    margin: 0 auto;
+    width: 50%;
+    height: 36%;
+    text-align: center;
+    padding-left: 50px;
+}
+.introduce p{
+    color: #B28247;
+    text-align: center;
+    width: 34px;
+    font-size: 32px;
+    font-weight: 800;
+    word-wrap: break-word;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+/*第二板块第三部分*/
+.screen5{
+    height: 100%;
+    width: 100%;
+    background: url("../images/background04.png") no-repeat;
+    background-size: cover;
+}
+.scr5_top{
+    text-align: center;
+    padding-top: 26%;
+}
+.scr5_top img{
+    width: 45%;
+}
+.scr5_tit{
+    text-align: center;
+    padding-top: 42%;
+}
+.scr5_tit img{
+    width: 60%;
+}
+.scr5_text{
+    text-align: center;
+    font-size: 20px;
+    color: #F0BD7A;
+    margin-top: 8%;
+}
+.scr5_text p{
+    margin-bottom: 20px;
+}
+.scr5_bottom{
+    margin-top: 14%;
+    padding-left: 8%;
+}
+.scr5_bottom img{
+    width: 25%;
+}
+.scr5_address{
+    margin-left: 30px;
+    font-size: 22px;
+    color: #F0BD7A;
+    text-align: center;
+    margin-top: 50px;
+}
+.scr5_address .p1{
+    font-size: 56px;
+    color: #B28247;
+}
+.scr5_address .p2{
+    margin-top: 15px;
+}
